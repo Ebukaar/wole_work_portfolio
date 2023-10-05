@@ -6,13 +6,13 @@ export default function Navbar() {
 
   return (
     <nav className="bg-gray-800 text-white py-4 overflow-visible">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-medium text-teal">
+      <div className="container mx-auto flex justify-between items-center px-6 md:px-0"> 
+        <div className="text-2xl font-medium text-teal pl-6"> 
           LABIRAN & ASSOCIATES
         </div>
 
         <button
-          className="md:hidden flex items-center px-3 py-2 border rounded text-white border-white hover:text-hover-yellow hover:border-hover-yellow"
+          className="md:hidden flex items-center px-4 py-3 border rounded text-white border-white" 
           onClick={() => setIsSidebarOpen(true)}
         >
           <svg
@@ -85,48 +85,49 @@ export default function Navbar() {
           </li>
         </ul>
 
+
         {isSidebarOpen && (
           <div className="fixed top-0 right-0 w-1/2 h-full bg-gray-800 text-white z-20">
             <button
-              className="absolute top-0 right-0 p-4"
+              className="absolute top-0 right-0 p-6 text-4xl"
               onClick={() => setIsSidebarOpen(false)}
             >
               &times;
             </button>
-            <ul className="flex flex-col justify-between h-4/5 mt-10 pr-5 pl-10 text-lg">
+            <ul className="flex flex-col justify-between h-4/5 mt-20 pr-5 pl-10 text-lg">
                 {/* For medium and small screens */}
               <li>
-                <a href="#" className="hover:text-hover-yellow transition">
+                <a href="#" className="transition">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-hover-yellow transition">
+                <a href="#" className=" transition">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-hover-yellow transition">
+                <a href="#" className=" transition">
                   Gallery
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-hover-yellow transition">
+                <a href="#" className=" transition">
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-hover-yellow transition">
+                <a href="#" className=" transition">
                   Articles
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-hover-yellow transition">
+                <a href="#" className=" transition">
                   PDFs
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-hover-yellow transition">
+                <a href="#" className=" transition">
                   Contact Us
                 </a>
               </li>
