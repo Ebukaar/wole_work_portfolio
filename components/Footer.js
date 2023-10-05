@@ -22,14 +22,14 @@ function Footer() {
         <div className="w-full md:w-2/5 mb-8 md:mb-0">
           <h3 className="text-2xl font-semibold mb-6">LABIRAN
           <span className="text-teal"> & ASSOCIATES</span></h3>
-          <div className="flex space-x-4">
+          {/* <div className="flex space-x-4">
             <a href="#" className="text-white hover:text-teal-400">Home</a>
             <a href="#" className="text-white hover:text-teal-400">About</a>
             <a href="#" className="text-white hover:text-teal-400">Gallery</a>
             <a href="#" className="text-white hover:text-teal-400">Projects</a>
             <a href="#" className="text-white hover:text-teal-400">Articles</a>
             <a href="#" className="text-white hover:text-teal-400">PDFs</a>
-          </div>
+          </div> */}
           <p className="mt-6 text-gray-400">LABIRAN & ASSOCIATES © 2023</p>
         </div>
 
