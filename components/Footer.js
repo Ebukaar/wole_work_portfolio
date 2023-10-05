@@ -20,8 +20,8 @@ function Footer() {
       <div className="container mx-auto flex flex-wrap justify-between items-start">
 
         <div className="w-full md:w-2/5 mb-8 md:mb-0">
-          <h3 className="text-2xl font-semibold mb-6">LABIRAN
-          <span className="text-teal"> & ASSOCIATES</span></h3>
+          <h3 className="text-2xl font-medium mb-6 text-teal">LABIRAN
+          <span className=""> & ASSOCIATES</span></h3>
           {/* <div className="flex space-x-4">
             <a href="#" className="text-white hover:text-teal-400">Home</a>
             <a href="#" className="text-white hover:text-teal-400">About</a>
