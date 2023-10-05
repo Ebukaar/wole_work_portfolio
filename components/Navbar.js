@@ -87,7 +87,7 @@ export default function Navbar() {
 
 
         {isSidebarOpen && (
-          <div className="fixed top-0 right-0 w-1/2 h-full bg-gray-800 text-white z-20">
+          <div className={`fixed top-0 right-0 w-1/2 h-full bg-gray-800 text-white z-20 transform transition-transform ease-in-out ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}>
             <button
               className="absolute top-0 right-0 p-6 text-4xl"
               onClick={() => setIsSidebarOpen(false)}
