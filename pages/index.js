@@ -8,7 +8,7 @@ function HomePage() {
       <AboutAndServices/>
       {/* <AboutUs /> */}
       {/* <Services /> */}
-      Welcome to the homepage!
+      {/* Welcome to the homepage! */}
     </div>
   );
 }
