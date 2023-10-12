@@ -1,8 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { auth } from '../firebase/config.js';
+import LogoutButton from "./LogoutButton.js";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [user, setUser] = useState(null);
+
+  const router = useRouter();
+
+  // This effect runs once when the component mounts and sets up an auth state observer
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user); // User is signed in, update the state
+      } else {
+        setUser(null); // User is signed out, update the state
+      }
+    });
+
+    // Cleanup the observer when the component unmounts
+    return () => unsubscribe();
+  }, []);
 
   return (
     <nav className="bg-gray-800 text-white py-4 overflow-visible">
@@ -83,6 +103,11 @@ export default function Navbar() {
               Contact Us
             </a>
           </li>
+          {user && ( // This checks if a user is authenticated before rendering the LogoutButton
+            <li>
+              <LogoutButton />
+            </li>
+          )}
         </ul>
 
 
@@ -131,6 +156,11 @@ export default function Navbar() {
                   Contact Us
                 </a>
               </li>
+              {user && ( // This checks if a user is authenticated before rendering the LogoutButton
+              <li className="mt-6">
+                <LogoutButton setIsSidebarOpen={setIsSidebarOpen} /> {/* Passing setIsSidebarOpen to close sidebar on logout */}
+              </li>
+            )}
             </ul>
           </div>
         )}
