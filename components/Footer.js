@@ -36,15 +36,19 @@ function Footer() {
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <div className="flex items-center mb-4">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3" />
-            <p><span className="font-semibold">444 S. Cedros Ave</span> Solana Beach, California</p>
+            <p><span className="font-semibold">E9/1067 Abayomi Estate,</span>Old Ife Road, Agodi, Ibadan </p>
+          </div>
+          <div className="flex items-center mb-4">
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3" />
+            <p><span className="font-semibold">23, Oladosu Street,</span>Off Toyin Street, Ikeja, Lagos.</p>
           </div>
           <div className="flex items-center mb-4">
             <FontAwesomeIcon icon={faPhone} className="mr-3" />
-            <p>+1.555.555.5555</p>
+            <p><a href='tel:08023430651'>08023430651</a></p>
           </div>
           <div className="flex items-center">
             <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
-            <a href="mailto:support@company.com" className="hover:text-teal-400">support@company.com</a>
+            <a href="mailto:wolelabiran@yahoo.co.uk" className="hover:text-teal-400">wolelabiran@yahoo.co.uk</a>
           </div>
         </div>
 

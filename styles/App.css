@@ -1,0 +1,5 @@
+.custom-list-style {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 2px; /* Adjust based on your design preference */
+  }
