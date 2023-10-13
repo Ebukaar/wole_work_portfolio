@@ -45,21 +45,24 @@ export default function Navbar() {
           </svg>
         </button>
 
-        <ul className="hidden md:flex items-center font-light space-x-4">
+        <ul className="hidden md:flex items-center font-light space-x-4 px-1.5">
             {/* For larger Screens */}
-          <li>
-            <a href="#" className="hover:text-hover-yellow transition">
+          <li className="group relative">
+            <a href="#" className="relative inline-block transition">
               Home
+            <span className="absolute h-0.5 bg-white w-full left-0 bottom-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
             </a>
           </li>
-          <li>
-            <a href="#" className="hover:text-hover-yellow transition">
+          <li className="group relative">
+            <a href="#" className="relative inline-block transition">
               About
+            <span className="absolute h-0.5 bg-white w-full left-0 bottom-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>  
             </a>
           </li>
-          <li>
-            <a href="#" className="hover:text-hover-yellow transition">
+          <li className="group relative">
+            <a href="#" className="relative inline-block transition">
               Gallery
+              <span className="absolute h-0.5 bg-white w-full left-0 bottom-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>    
             </a>
           </li>
           <li className="relative group">
@@ -98,9 +101,10 @@ export default function Navbar() {
               </ul>
             )}
           </li>
-          <li>
-            <a href="#" className="hover:text-hover-yellow transition">
+          <li className="group relative" >
+            <a href="#" className="relative inline-block transition">
               Contact Us
+              <span className="absolute h-0.5 bg-white w-full left-0 bottom-0 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>  
             </a>
           </li>
           {user && ( // This checks if a user is authenticated before rendering the LogoutButton

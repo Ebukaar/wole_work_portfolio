@@ -1,5 +1,20 @@
 .custom-list-style {
+  list-style: none; /* Removes default list styling */
+  padding-left: 0; /* Resets padding */
+}
+
+
+.custom-list-style li::before {
+  content: "+"; /* This is your "bullet" */
+  padding-right: 8px; /* Space between the "bullet" and the list item */
+  color: inherit; /* Or any color you prefer */
+  font-weight: 700;
+}
+
+
+
+/* .custom-list-style {
     list-style-type: disc;
     list-style-position: inside;
     padding-left: 2px; /* Adjust based on your design preference */
-  }
+  /* }  */
