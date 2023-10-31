@@ -2,7 +2,6 @@ import React from 'react';
 import SwiperCore, { Autoplay, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
 // install Swiper modules
 SwiperCore.use([Autoplay, Pagination]);
 
@@ -25,7 +24,6 @@ const HeroSection = () => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      autoplay={true}
       autoplay={{ delay: 2000, disableOnInteraction: false}}
       pagination={{ clickable: true }}
       style={{ width: '100%', height: '500px' }} // Set a fixed height for the swiper container
