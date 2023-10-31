@@ -14,7 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "autoprefixer": "^10.4.16",
-    "firebase": "^10.4.0",
+    "firebase": "^10.5.0",
     "next": "latest",
     "postcss": "^8.4.31",
     "react": "latest",
