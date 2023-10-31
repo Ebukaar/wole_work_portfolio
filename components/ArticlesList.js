@@ -146,8 +146,10 @@ const ArticlesList = ({ isAdmin = false }) => {
     return <p>Loading articles...</p>;
   }
 
+  const calculatedPadding = articles.length > 10 ? "py-12" : "py-6";
+
   return (
-    <div className="flex flex-col items-center bg-gray-200 min-h-screen py-12">
+    <div className={`flex flex-col items-center bg-gray-200 min-h-screen ${calculatedPadding}`}>
        <h2 className="text-3xl font-semibold text-gray-700 mb-10 relative group hover:underline">
         <span className="relative inline-block">
           Latest Articles

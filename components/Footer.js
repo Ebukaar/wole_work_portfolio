@@ -53,8 +53,8 @@ function Footer() {
         </div>
 
         <div className="w-full md:w-1/4">
-          <p className="mb-6">About the company</p>
-          <p className="text-gray-400 mb-6">Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.</p>
+          {/* <p className="mb-6">About the company</p> */}
+          {/* <p className="text-gray-400 mb-6">Lorem ipsum dolor sit amet, consectateur adispicin</p> */}
           <div className="flex space-x-4 text-2xl">
             <a href="#"><FontAwesomeIcon icon={faFacebook} className="hover:text-teal-400" /></a>
             <a href="#"><FontAwesomeIcon icon={faTwitter} className="hover:text-teal-400" /></a>
